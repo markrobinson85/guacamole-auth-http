@@ -27,7 +27,9 @@ From the guacamole-client root clone this project into extensions/
 
 Add the following to your guacamole.properties (/etc/guacamole or /usr/share/tomcat7/.guacamole/guacamole.properties)
 
-	auth-provider com.edoceo.guacamole.auth.HttpAuthenticationProvider
+In 0.9.9, do not specify auth-provider. Simply place the jar in your .guacamole/extensions directory, and guacamole-client will automatically recognize it by reading the guac-manifest.
+
+	# auth-provider: com.edoceo.guacamole.auth.HttpAuthenticationProvider
 	auth-http-page: http://sso.example.com/external/guacamole
 	auth-http-head-auth: Whatever Here is added as Authorization header and is required
 
