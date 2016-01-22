@@ -1,0 +1,16 @@
+{
+
+    "guacamoleVersion" : "0.9.9",
+
+    "name"      : "HTTP Authentication",
+    "namespace" : "guac-auth-http",
+
+    "authProviders" : [
+        "com.edoceo.guacamole.auth.HttpAuthenticationProvider"
+    ],
+
+    "translations" : [
+        
+    ]
+
+}
